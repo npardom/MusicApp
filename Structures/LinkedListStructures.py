@@ -1,4 +1,3 @@
-import time
 #Se crea la estructura de lista enlazada
 class Node:
     def __init__(self, element = None, next = None):
@@ -87,9 +86,7 @@ class Stack(LinkedList):
         return self.get(0)
 
     def pop(self):
-        duration = self.remove(0)
-        note = self.remove(0)
-        return (note, duration)
+        return self.remove(0)
 
     def getAsArray(self):
         array = []
